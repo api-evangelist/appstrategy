@@ -1,0 +1,87 @@
+generated: '2026-10-20'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 5
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - docs
+  - portal
+  - support
+  - website
+hosts:
+- host: api.appstrategy.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: appstrategy.com
+  role: api
+  relation: own
+- host: appstrategy.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  serves: []
+  registrable_domain: appstrategy.com
+  role: website
+  relation: own
+- host: docs.appstrategy.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Documentation
+  serves:
+  - docs
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: appstrategy.com
+  role: docs
+  relation: own
+- host: support.appstrategy.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: appstrategy.com
+  role: support
+  relation: own
+- host: www.appstrategy.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - PrivacyPolicy
+  - DeveloperPortal
+  - GettingStarted
+  - Pricing
+  - SignUp
+  - Support
+  serves:
+  - docs
+  registrable_domain: appstrategy.com
+  role: portal
+  relation: own

@@ -1,0 +1,271 @@
+openapi: 3.1.0
+info:
+  title: appStrategy API
+  version: '2026-10-20'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-20: 9 operation(s) read from 11 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; appStrategy has published no machine-readable contract that the
+    pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 0
+    documentation: 9
+    pages-with-code: 0
+    pages-read: 11
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-20'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.appstrategy.com/apprules-r-documentation/platform/platform-features/system-settings/data-sources/connection-settings/erp/d365businesscentral/business-central-endpoints.md
+  - https://docs.appstrategy.com/apprules-r-documentation/samples/sample-projects/snippets.md
+  - https://docs.appstrategy.com/apprules-r-documentation/platform/self-hosting/software-installation/webapi.md
+  - https://docs.appstrategy.com/apprules-r-documentation/samples/sample-projects/snippets/snippet-infinite-loop.md
+  - https://docs.appstrategy.com/apprules-r-documentation/samples/sample-projects/snippets/snippet-counters-and-running-totals.md
+  - https://docs.appstrategy.com/apprules-r-documentation/samples/sample-projects/snippets/snippet-executing-financial-functions.md
+  - https://docs.appstrategy.com/apprules-r-documentation/platform/platform-features/creating-and-running-projects/running-projects/web-api.md
+  - https://docs.appstrategy.com/apprules-r-documentation/platform/platform-features/system-settings/data-sources/connection-settings/services/rest.md
+  - https://docs.appstrategy.com/apprules-r-documentation/platform/platform-features/system-settings/data-sources/connection-settings/services/graphql.md
+  - https://docs.appstrategy.com/apprules-r-documentation/samples/sample-projects/snippets/snippet-arguments-variables-dynamic-values-and-sourced-values.md
+  - https://docs.appstrategy.com/apprules-r-documentation/samples/sample-projects/snippets/using-composite-keys.md
+paths:
+  ? /apprules-r-documentation/platform/platform-features/system-settings/data-sources/connection-settings/erp/d365businesscentral/business-central-endpoints.md
+  : get:
+      operationId: get_apprules_r_documentation_platform_platform_features_system_settings_data_sou
+      tags:
+      - Apprules R Documentation
+      summary: Business Central Endpoints
+      description: Perform an HTTP GET request on the URL with the `ask` and `goal` query parameters to retrieve documentation answers.
+      x-source: https://docs.appstrategy.com/apprules-r-documentation/platform/platform-features/system-settings/data-sources/connection-settings/erp/d365businesscentral/business-central-endpoints.md
+      parameters:
+      - name: ask
+        in: query
+        required: false
+        schema:
+          type: string
+        description: The immediate question to ask the documentation engine, written in natural language.
+      - name: goal
+        in: query
+        required: false
+        schema:
+          type: string
+        description: The overall goal the user is trying to achieve, used to tailor the answer.
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApprulesRDocumentationPlatformPlatformFeaturesSystemSetti'
+      x-evidence:
+        kind: documentation
+  /apprules-r-documentation/platform/platform-features/system-settings/data-sources/connection-settings/services/rest.md:
+    get:
+      operationId: get_apprules_r_documentation_platform_platform_features_system_settings_data_sou
+      tags:
+      - Apprules R Documentation
+      summary: REST
+      description: Retrieves the REST service documentation page in Markdown format.
+      x-source: https://docs.appstrategy.com/apprules-r-documentation/platform/platform-features/system-settings/data-sources/connection-settings/services/rest.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /apprules-r-documentation/platform/self-hosting/software-installation/webapi.md:
+    get:
+      operationId: get_apprules_r_documentation_platform_self_hosting_software_installation_webapi_
+      tags:
+      - Apprules R Documentation
+      summary: Perform an HTTP GET request on the following URL with the `ask` and `goal` query parameters
+      description: The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+      x-source: https://docs.appstrategy.com/apprules-r-documentation/platform/self-hosting/software-installation/webapi.md
+      parameters:
+      - name: ask
+        in: query
+        required: false
+        schema:
+          type: string
+        description: The immediate question; specific, self‑contained, natural language.
+      - name: goal
+        in: query
+        required: false
+        schema:
+          type: string
+        description: The user's ultimate goal, describing the desired outcome.
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /apprules-r-documentation/samples/sample-projects/snippets.md:
+    get:
+      operationId: get_apprules_r_documentation_samples_sample_projects_snippets_md
+      tags:
+      - Apprules R Documentation
+      summary: Snippets
+      description: Perform an HTTP GET request on the URL with the `ask` and `goal` query parameters to retrieve a direct answer and relevant
+        excerpts from the documentation.
+      x-source: https://docs.appstrategy.com/apprules-r-documentation/samples/sample-projects/snippets.md
+      parameters:
+      - name: ask
+        in: query
+        required: false
+        schema:
+          type: string
+        description: 'The immediate question: it should be specific, self-contained, and written in natural language.'
+      - name: goal
+        in: query
+        required: false
+        schema:
+          type: string
+        description: The user’s ultimate goal, describing the outcome they want.
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  ? /apprules-r-documentation/samples/sample-projects/snippets/snippet-arguments-variables-dynamic-values-and-sourced-values.md
+  : get:
+      operationId: get_apprules_r_documentation_samples_sample_projects_snippets_snippet_arguments_
+      tags:
+      - Apprules R Documentation
+      summary: Snippet - Arguments, Variables, Dynamic Values & Sourced Values
+      description: Perform an HTTP GET request on the URL with the `ask` and `goal` query parameters to retrieve a direct answer and relevant
+        excerpts from the documentation.
+      x-source: https://docs.appstrategy.com/apprules-r-documentation/samples/sample-projects/snippets/snippet-arguments-variables-dynamic-values-and-sourced-values.md
+      parameters:
+      - name: ask
+        in: query
+        required: false
+        schema:
+          type: string
+        description: 'The immediate question: it should be specific, self-contained, and written in natural language.'
+      - name: goal
+        in: query
+        required: false
+        schema:
+          type: string
+        description: The user’s ultimate goal, describing the outcome they want.
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /apprules-r-documentation/samples/sample-projects/snippets/snippet-counters-and-running-totals.md:
+    get:
+      operationId: get_apprules_r_documentation_samples_sample_projects_snippets_snippet_counters_a
+      tags:
+      - Apprules R Documentation
+      summary: Snippet - Counters & Running Totals
+      description: Perform an HTTP GET request on the URL with the `ask` and `goal` query parameters to retrieve a direct answer and relevant
+        excerpts from the documentation.
+      x-source: https://docs.appstrategy.com/apprules-r-documentation/samples/sample-projects/snippets/snippet-counters-and-running-totals.md
+      parameters:
+      - name: ask
+        in: query
+        required: false
+        schema:
+          type: string
+        description: The immediate question, specific and self‑contained.
+      - name: goal
+        in: query
+        required: false
+        schema:
+          type: string
+        description: The user’s overall goal, describing the desired outcome.
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /apprules-r-documentation/samples/sample-projects/snippets/snippet-executing-financial-functions.md:
+    get:
+      operationId: get_apprules_r_documentation_samples_sample_projects_snippets_snippet_executing_
+      tags:
+      - Apprules R Documentation
+      summary: Snippet - Executing Financial Functions
+      description: Perform an HTTP GET request on the URL with the `ask` and `goal` query parameters to retrieve a direct answer and relevant
+        excerpts from the documentation.
+      x-source: https://docs.appstrategy.com/apprules-r-documentation/samples/sample-projects/snippets/snippet-executing-financial-functions.md
+      parameters:
+      - name: ask
+        in: query
+        required: false
+        schema:
+          type: string
+        description: The immediate question, specific and self‑contained.
+      - name: goal
+        in: query
+        required: false
+        schema:
+          type: string
+        description: The user’s ultimate goal, providing context for a better answer.
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /apprules-r-documentation/samples/sample-projects/snippets/snippet-infinite-loop.md:
+    get:
+      operationId: get_apprules_r_documentation_samples_sample_projects_snippets_snippet_infinite_l
+      tags:
+      - Apprules R Documentation
+      summary: Snippet - Infinite Loop
+      description: Perform an HTTP GET request on the URL with the `ask` and `goal` query parameters to retrieve a direct answer and relevant
+        excerpts from the documentation.
+      x-source: https://docs.appstrategy.com/apprules-r-documentation/samples/sample-projects/snippets/snippet-infinite-loop.md
+      parameters:
+      - name: ask
+        in: query
+        required: false
+        schema:
+          type: string
+        description: The immediate question, specific and self‑contained.
+      - name: goal
+        in: query
+        required: false
+        schema:
+          type: string
+        description: The user’s overall goal, describing the desired outcome.
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /apprules-r-documentation/samples/sample-projects/snippets/using-composite-keys.md:
+    get:
+      operationId: get_apprules_r_documentation_samples_sample_projects_snippets_using_composite_ke
+      tags:
+      - Apprules R Documentation
+      summary: Using Composite Keys
+      description: Perform an HTTP GET request on the URL with the `ask` and `goal` query parameters to retrieve a direct answer from the documentation.
+      x-source: https://docs.appstrategy.com/apprules-r-documentation/samples/sample-projects/snippets/using-composite-keys.md
+      parameters:
+      - name: ask
+        in: query
+        required: false
+        schema:
+          type: string
+        description: The immediate question, specific and self‑contained.
+      - name: goal
+        in: query
+        required: false
+        schema:
+          type: string
+        description: The user’s overall goal, describing the desired outcome.
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    GetApprulesRDocumentationPlatformPlatformFeaturesSystemSetti:
+      type: object
+      properties:
+        '200':
+          type: string
+          description: Successful response containing the answer and relevant excerpts from the documentation.
+tags:
+- name: Apprules R Documentation

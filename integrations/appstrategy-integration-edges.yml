@@ -1,0 +1,16 @@
+generated: '2026-10-20'
+method: none
+source:
+- https://zapier.com/apps/appstrategy/integrations
+- https://n8n.io/integrations/appstrategy/
+- https://composio.dev/toolkits/appstrategy
+- https://monid.ai/tools/appstrategy
+checked:
+- https://composio.dev/toolkits/appstrategy
+- https://monid.ai/tools/appstrategy
+- https://n8n.io/integrations/appstrategy/
+- https://zapier.com/apps/appstrategy/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

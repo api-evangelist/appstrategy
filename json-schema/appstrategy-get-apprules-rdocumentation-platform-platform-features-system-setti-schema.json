@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/appstrategy/main/json-schema/appstrategy-get-apprules-rdocumentation-platform-platform-features-system-setti-schema.json",
+  "title": "GetApprulesRDocumentationPlatformPlatformFeaturesSystemSetti",
+  "x-generated": "2026-10-20",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/appstrategy-openapi-generated.yml#/components/schemas/GetApprulesRDocumentationPlatformPlatformFeaturesSystemSetti",
+  "type": "object",
+  "properties": {
+    "200": {
+      "type": "string",
+      "description": "Successful response containing the answer and relevant excerpts from the documentation."
+    }
+  }
+}

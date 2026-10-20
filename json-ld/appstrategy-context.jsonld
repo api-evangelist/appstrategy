@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "@vocab": "https://appstrategy.com/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "appstrategy": "https://appstrategy.com/schema#",
+    "GetApprulesRDocumentationPlatformPlatformFeaturesSystemSetti": "appstrategy:GetApprulesRDocumentationPlatformPlatformFeaturesSystemSetti"
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "appStrategy API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects appStrategy's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-20) from openapi/_ae-authored/appstrategy-openapi-generated.yml.",
+  "dcterms:created": "2026-10-20",
+  "dcterms:source": [
+    "openapi/_ae-authored/appstrategy-openapi-generated.yml"
+  ]
+}

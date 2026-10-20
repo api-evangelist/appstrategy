@@ -1,23 +1,104 @@
 aid: appstrategy
+
 name: appStrategy
-description: 'appStrategy is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.appstrategy.com/wp-content/uploads/2023/01/logoapp.png
+
+description: appStrategy provides an all‑in‑one data management and AI automation platform that helps enterprises govern, migrate, replicate,
+  and integrate data across cloud and on‑premise environments. Their solutions include AI‑driven automation, data governance, and a suite of connectors
+  for seamless data flow, aiming to accelerate digital transformation and operational efficiency for businesses of all sizes.
+
 url: https://raw.githubusercontent.com/api-evangelist/appstrategy/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-20 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-20'
+
 modified: '2026-10-20'
+
 tags:
+- Data Management
+- AI Automation
+- Enterprise Software
+- Integration
+- Data Migration
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/appstrategy-rules.yml
+- type: JSONLD
+  url: json-ld/appstrategy-context.jsonld
+- type: Vocabulary
+  url: vocabulary/appstrategy-vocabulary.yml
+- type: DataModel
+  url: data-model/appstrategy-data-model.yml
+- type: Conformance
+  url: conformance/appstrategy-conformance.yml
+- type: LLMsTxt
+  url: llms/appstrategy-llms.txt
+- type: WellKnown
+  url: well-known/appstrategy-well-known.yml
+- type: Hosts
+  url: hosts/appstrategy-hosts.yml
+- type: Vendors
+  url: vendors/appstrategy-vendors.yml
+- type: PrivacyPolicy
+  url: https://www.appstrategy.com/privacy-policy
+- type: DomainSecurity
+  url: security/appstrategy-domain-security.yml
 - type: Website
   url: https://appstrategy.com/
+- type: Documentation
+  url: https://docs.appstrategy.com/
+- type: DeveloperPortal
+  url: https://www.appstrategy.com/
+- type: GettingStarted
+  url: https://www.appstrategy.com/getting-started
+- type: Pricing
+  url: https://www.appstrategy.com/pricing
+- type: SignUp
+  url: https://www.appstrategy.com/contact/
+- type: Support
+  url: https://www.appstrategy.com/contact/
+
+apis:
+- aid: appstrategy:appstrategy-api
+  name: appStrategy API
+  description: 'appStrategy API as documented publicly: 9 operations. Contract generated from the documentation by API Evangelist (2026-10-20);
+    not the provider''s own document.'
+  humanURL: https://docs.appstrategy.com/apprules-r-documentation/platform/platform-features/system-settings/data-sources/connection-settings/erp/d365businesscentral/business-central-endpoints.md
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/appstrategy-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/appstrategy-get-apprules-rdocumentation-platform-platform-features-system-setti-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: The developer portal redirects to a GitBook site that provides no OpenAPI or other machine‑readable contract.
+  evidence:
+  - url: https://docs.appstrategy.com/
+    status: 307
+  checked: '2026-10-20'
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 18
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
